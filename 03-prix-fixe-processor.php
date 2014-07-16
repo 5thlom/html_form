@@ -1,4 +1,6 @@
 <?php
+	/*this php file is for two html files, one is using get_method, the other osn is post_method.*/
+	/*isset check if the get_mothod has a input data, than we set variable $appetizer to be the input value, else set it to the post input value*/
 	if(isset($_POST['appetizer']))
 		$appetizer = $_POST['appetizer'];
 	else $appetizer = $_GET['appetizer'];
@@ -21,6 +23,7 @@
 	echo '<p>Your Order:</p><ul>';
 
 	/*appetizer*/
+	/*after apetizer has a value, use switch case to check the input value, and echo it as a list item*/
 	switch($appetizer){
 		case 'c1':
 			echo '<li>Tomato Gazpacho</li>';
